@@ -16,21 +16,21 @@ const RegistroProveedor = () => {
   });
 
   const paises = ['Colombia', 'Argentina', 'Brasil'];
-  const departamentos = ['Antioquia', 'Cundinamarca', 'Valle del Cauca']; 
-  const ciudades = ['Medellín', 'Bogotá', 'Cali']; 
-  const nits = ['NIT', 'RUT']; 
+  const departamentos = ['Antioquia', 'Cundinamarca', 'Valle del Cauca'];
+  const ciudades = ['Medellín', 'Bogotá', 'Cali'];
+  const nits = ['NIT', 'RUT'];
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setProveedor({
       ...proveedor,
-      [name]: value
+      [name]: value,
     });
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Proveedor:', proveedor);
+    e.preventDefault()
+    console.log('Proveedor registrado:', proveedor);
   };
 
   return (
